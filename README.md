@@ -5,7 +5,7 @@
 1. windowとして普通にzipファイルを解凍。中身の`ngrok`という拡張子なしのデータが出てくるので、このディレクトリに置いておく
 1. `www/page.py`は好きなものに改良してよいが、`page.py`の名前は変えない。
 1. `docker-compose up -d`をする。
-1. `docker exec -it test_flask_ngrok_ctr ngrok http 192.168.99.10:3031`というコマンドをたたく。
+1. `docker exec -it test_flask_ngrok_ctr ngrok http   3031`というコマンドをたたく。
 1. 下記のような表示になる。`Forwarding`が２つあるが、`http`と`https`でわかれている。
 1. `http://2ef3b4a8.ngrok.io` or `https://2ef3b4a8.ngrok.io` をブラウザのURLに張り付けると`www/page.py`の内容が表示される。
 　　（上記URLは仮なので、ここから飛んでも見ることは出来ない）
